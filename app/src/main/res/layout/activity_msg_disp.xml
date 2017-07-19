@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a9dfbf"
+    android:orientation="vertical"
+    tools:context="com.example.kishan.ciphers.Msg_disp">
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="49dp"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Your Messgae"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tv3"
+        android:layout_alignRight="@+id/tv3"
+        android:layout_below="@+id/tv3"
+        android:layout_marginTop="30dp"
+        android:text="TextView"
+        android:layout_gravity="center"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="80dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/bt2"
+            android:layout_width="77dp"
+            android:layout_height="52dp"
+            android:layout_alignLeft="@+id/tv4"
+            android:layout_alignStart="@+id/tv4"
+            android:layout_below="@+id/tv4"
+            android:layout_gravity="center"
+            android:onClick="share"
+            android:text="Share"
+            android:src="@drawable/share"
+            android:textColor="#fff" />
+
+        <ImageView
+            android:id="@+id/button3"
+            android:layout_width="77dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:onClick="main"
+            android:text="Home"
+            android:src="@drawable/home"
+            android:textColor="#fff" />
+    </LinearLayout>
+</LinearLayout>

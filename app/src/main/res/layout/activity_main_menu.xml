@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5b7b1"
+    tools:context="com.example.kishan.ciphers.Main_menu">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:background="@drawable/cipher_bc">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Encryption"
+        android:textColor="#FFF"
+        android:layout_marginTop="69dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="130dp"
+        android:layout_marginEnd="130dp"
+        android:background="@drawable/myshape"
+        android:onClick="encrypt"
+        />
+
+    <Button
+        android:id="@+id/button2"
+        android:textColor="#FFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="69dp"
+        android:text="Decryption"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignStart="@+id/button"
+        android:background="@drawable/myshape"
+        android:onClick="decrypt"/>
+</RelativeLayout>
+</RelativeLayout>
